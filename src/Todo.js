@@ -32,7 +32,8 @@ function Todo() {
         <div className="todoContainer">
           <input
             type="text"
-            placeholder="Enter the task"
+            placeholder="Enter your task"
+            
             value={task}
             onChange={(e) => setTask(e.target.value)}
           />
