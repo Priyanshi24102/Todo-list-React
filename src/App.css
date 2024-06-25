@@ -1,38 +1,92 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 100vh; 
+  width: 100%; 
+  background-image: url('https://img.freepik.com/free-photo/flat-lay-desk-concept-with-copy-space_23-2148236810.jpg?w=996&t=st=1719314542~exp=1719315142~hmac=7458aa4bf07bd6f950cdaa21cc29e01fa6fbd77e8df5912abaf07a0951e49cb8');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+   background-color: rgb(240, 253, 253);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  
+
+}
+.todoContainer{
+  padding-top: 20px;
+    height: 500px;
+    width: 450px;
+    background-color: rgb(231, 235, 235);
+    color: white;
+    border-radius: 5px;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.todoContainer input{
+  margin: 20px;
+  padding: 4px;
+  width: 300px;
+  height: 20px;
+  border: 2px solid rgb(96, 95, 95);
+  
+}
+.todoContainer .taskbtn{
+  background-color: black;
   color: white;
+  border: none;
+  padding: 7.5px 5.9px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.taskbtn:hover{
+  cursor: pointer;
+}
+.taskli{
+  /* background-color: rgb(196, 194, 190); */
+  margin: 30px 0px;
+  height: 30px;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(187, 221, 243); */
+  background-color: rgb(216, 208, 216);
+  background-color: p;
+  border-radius: 5px;
+  /* border: 2px solid rgb(181, 178, 178); */
+}
+.taskli input{
+  margin: 0;
+  width: 300px;
+  height: 20px;
+}
+ul li{
+  list-style: none;
+  background-color: transparent;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  margin: 0px 3px;
+  padding: 4px;
+  background-color: black;
+  /* border: 2px solid white; */
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+.btn:hover{
+  cursor: pointer;;
 }
